@@ -1,0 +1,22 @@
+Source: carton
+Section: perl
+Priority: optional
+Maintainer: Dan Holm <dholm@>
+Build-Depends: debhelper (>= 9.20120312)
+Build-Depends-Indep: perl
+Standards-Version: 3.9.5
+Homepage: https://metacpan.org/release/Carton
+
+Package: carton
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends}
+Description: Perl module dependency manager (aka Bundler for Perl)
+ carton is a command line tool to track the Perl module dependencies for your
+ Perl application. Dependencies are declared using cpanfile format, and the
+ managed dependencies are tracked in a cpanfile.snapshot file, which is meant
+ to be version controlled, and the snapshot file allows other developers of
+ your application will have the exact same versions of the modules.
+ .
+ For cpanfile syntax, see cpanfile documentation.
+ .
+ This description was automagically extracted from the module by dh-make-perl.
